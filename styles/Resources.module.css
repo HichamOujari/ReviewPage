@@ -1,0 +1,138 @@
+.Content{
+    display: flex;
+
+}
+.Content>.left{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 90px;
+    max-width: 215px;
+    position: relative;
+}
+.Content>.left>.GetHelp{
+    left: 30px;
+    top:80vh;
+    min-width: 200px;
+    position: absolute;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-26) var(--unnamed-font-family-helvetica);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 12px/26px Helvetica;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.Content>.left>.GetHelp>span{
+    color: #587FFF;
+    cursor: pointer;
+}
+.Content>.left>li{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/25px var(--unnamed-font-family-helvetica);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 16px/25px Helvetica;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+    width:  215px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: 1s;
+    transform-origin: all;
+    text-transform: capitalize;
+}
+
+.Content>.left>li:hover,.Content>.left>.Active{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px 25px 25px 0px;
+    opacity: 1;
+    color: var(--unnamed-color-587fff);
+    text-align: left;
+    color: #587FFF;
+    opacity: 1;
+}
+.Content>.ContentResources{
+    width: Calc(80% - 215px);
+    margin-top: 25px;
+    padding-left: 60px;
+}
+.Content>.ContentResources>.Icons{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.Content>.ContentResources>.Icons>li{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #737373;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.Content>.ContentResources>.Icons>li:hover{
+    color: #587FFF;
+}
+.Content>.ContentResources>.Elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 33px;
+}
+
+.ResourcesCard{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 15px;
+}
+.ResourcesCard>.title_Star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ResourcesCard>.title_Star>.title{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 18px/21px var(--unnamed-font-family-helvetica);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 18px/21px Helvetica;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.ResourcesCard>.title_Star>.Icon{
+    color: #737373;
+    cursor: pointer;
+}
+.ResourcesCard>.desc{
+    font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-16)/var(--unnamed-line-spacing-20) Noto Sans;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal medium 16px/20px Noto Sans;
+    letter-spacing: 0px;
+    color: #737373;
+    opacity: 1;
+}
+.ResourcesCard>.type{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-10)/var(--unnamed-line-spacing-12) var(--unnamed-font-family-helvetica);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-7f7f7f);
+    text-align: left;
+    font: normal normal bold 10px/12px Helvetica;
+    letter-spacing: 0px;
+    color: #7F7F7F;
+    opacity: 1;
+}
+.ResourcesCard>.date{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-10)/var(--unnamed-line-spacing-12) var(--unnamed-font-family-helvetica);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 10px/12px Helvetica;
+    letter-spacing: 0px;
+    color: #A7A7A7;
+    opacity: 1;
+}

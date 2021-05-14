@@ -1,0 +1,67 @@
+.Nav{
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 10px #00000029;
+    opacity: 1;
+    align-items: center;
+}
+.Nav>.MenuIcon{
+    display: none;
+}
+.Nav>.left{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 70%;
+    padding-right: 40px;
+}
+.Nav>.left>li,.Nav>.right>li{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-26) var(--unnamed-font-family-helvetica);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-00000080);
+    text-align: center;
+    font: normal normal bold 16px/26px Helvetica;
+    letter-spacing: 0px;
+    color: #00000080;
+    opacity: 1;
+    margin-right: 14px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.Nav>.left>.Active,.Nav>.left>li:hover,.Nav>.right>li:hover{
+    color: #587FFF;
+}
+.Nav>.right{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.Nav>.right>li{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 0;
+}
+
+@media (max-width:900px){
+    .Nav>.left{
+        display: none;
+    }
+    .Nav{
+        justify-content: inherit;
+        position: relative;
+        height: 60px;
+    }
+    .Nav>.right{
+        position: absolute;
+        right: 40px;
+        top: 3px;
+    }
+    .Nav>.MenuIcon{
+        display: flex;
+        font-size: 30px;
+        position: absolute;
+        left: 20px;
+        cursor: pointer;
+    }
+}
